@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Okul Kulübü Kitaplığı</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1> Okul Kulübü Kitaplığı</h1>
+
+    <div class="controls">
+      <input
+        type="text"
+        id="aramaInput"
+        placeholder="Başlığa göre ara..."
+      />
+      <select id="kategoriSelect">
+        <option value="Hepsi">Tüm Kategoriler</option>
+        <option value="Roman">Roman</option>
+        <option value="Bilim">Bilim</option>
+        <option value="Tarih">Tarih</option>
+      </select>
+    </div>
+
+    <div id="favoriPaneli" class="favorites-panel">
+      <h2> Favoriler (<span id="favCount">0</span>)</h2>
+      <ul id="favList"></ul>
+    </div>
+
+    <div id="kitapListesi" class="book-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
